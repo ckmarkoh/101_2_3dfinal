@@ -1,0 +1,63 @@
+	//how to use: here is an example
+	//traverse the triangle of the model (and render them urself)
+	/*for(int i=0;i<(int)OBJ->numtriangles;i++){
+
+		//the index of each vertices
+		int indv1 = OBJ->triangles[i].vindices[0];
+		int indv2 = OBJ->triangles[i].vindices[1];
+		int indv3 = OBJ->triangles[i].vindices[2];
+
+		//the index of each color (same as the index of vertex
+		int indc1 = indv1;
+		int indc2 = indv2;
+		int indc3 = indv3;
+
+		//the index of each normals
+		int indn1 = OBJ->triangles[i].nindices[0];
+		int indn2 = OBJ->triangles[i].nindices[1];
+		int indn3 = OBJ->triangles[i].nindices[2];
+
+		//the index of the face normal of the triangle i
+		int indfn = OBJ->triangles[i].findex;
+		
+		//the index of each texture coordinates
+		int indt1 = OBJ->triangles[i].tindices[0];
+		int indt2 = OBJ->triangles[i].tindices[1];
+		int indt3 = OBJ->triangles[i].tindices[2];
+
+		//for each channel (x,y,z)
+		for(int j=0;j<3;j++){
+			//vertex data			
+			cout << j << ": ";
+			cout << OBJ->vertices[indv1*3+j] << " ";
+			cout << OBJ->vertices[indv2*3+j] << " ";
+			cout << OBJ->vertices[indv3*3+j] << endl;
+			OBJ->vertices[indv1*3+j];
+			OBJ->vertices[indv2*3+j];
+			OBJ->vertices[indv3*3+j];
+
+			//color data
+
+			OBJ->colors[indc1*3+j];
+			OBJ->colors[indc2*3+j];
+			OBJ->colors[indc3*3+j];
+
+			//normal data
+			OBJ->normals[indn1*3+j];
+			OBJ->normals[indn2*3+j];
+			OBJ->normals[indn3*3+j];
+
+			//face normal data
+			OBJ->facetnorms[indfn*3+j];
+		}
+		system("pause");
+		//for each channel of texture coordinates
+		for(int j=0;j<2;j++){
+			OBJ->texcoords[indt1*2+j];
+			OBJ->texcoords[indt2*2+j];
+			OBJ->texcoords[indt3*2+j];
+		}
+
+		//render this triangle
+		//bla bla bla bla bla bla bla bla bla bla bla bla....
+	}*/
